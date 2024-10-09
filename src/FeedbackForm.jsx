@@ -13,7 +13,9 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import FormControl from '@mui/material/FormControl';
 import { useNavigate  } from 'react-router-dom';
-
+import logo from '../src/assets/Rectangle_1.png'
+import img from '../src/assets/Rectangle_12.png'
+import './index.css';
 
 const StyledRating = styled(Rating)(({ theme }) => ({
     '& .MuiRating-iconFilled': {
@@ -47,7 +49,7 @@ function FeedbackForm({ onSubmit }) {
             recommendation,
             suggestions,
             receiveFollowUp,
-            options,
+            options
         };
         console.log(feedback);
         onSubmit(feedback);
@@ -55,11 +57,11 @@ function FeedbackForm({ onSubmit }) {
     };
 
     return (
-        <div className="flex flex-col items-center p-4">
-        <img src="uniwell-logo-1.png" alt="" className="mb-4 w-32 h-auto" />
-        <div className="text-2xl font-bold mb-2 text-center">UNIWELL</div>
+        <div className="flex flex-col items-center p-4 ">
+        <img src={img} alt="" className="mb-4 w-32 h-auto" />
+        {/* <div className="text-2xl font-bold mb-2 text-center">UNIWELL</div> */}
         <div className="text-center mb-4">
-            <img src="Rectangle 1.pngmg2.jpg" alt="" className="mb-2" />
+            <img src={logo} alt="" className="mb-2" />
             <div>Hello, Thanks for Visiting</div>
             <p>Please help us improve our cafe services by filling in our feedback form. Thank you!</p>
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FeedbackForm from './FeedbackForm';
 import Dashboard from './Dashboard';
+import './index.css';
 
 function App() {
     const [feedbackList, setFeedbackList] = useState([]);
